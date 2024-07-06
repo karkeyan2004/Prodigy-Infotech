@@ -1,0 +1,59 @@
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.board-row {
+  display: flex;
+}
+
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 2px solid #000;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #ddd;
+}
+
+
+.winning-square {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+
+@media (max-width: 600px) {
+  .square {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  .status {
+    font-size: 18px;
+  }
+}
